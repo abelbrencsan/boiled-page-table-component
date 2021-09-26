@@ -42,7 +42,7 @@ table.table {
 /* Table component scheme modifications */
 @each $scheme in map-keys($schemes) {
 	@if (map-val($schemes, $scheme, generate-scheme) and $table-generate-scheme) {
-		&.scheme--#{$scheme} {
+		.scheme--#{$scheme} {
 
 			table.table {
 
